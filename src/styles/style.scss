@@ -1,0 +1,71 @@
+@import "fonts";
+// @import "../mixins/scss/all";
+@import "@mixins/scss/all";
+@include fontFace('Roboto-Regular', 'Roboto-Regular', 'font-weight-normal', 'font-style-normal', 'woff');
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.red {
+  color: red;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto-Regular';
+  background-color: #1d1d1d;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-image: url(../img/ElonMusk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &__item {
+    background-color: red;
+  }
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
